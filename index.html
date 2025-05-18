@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>Zaudēto mantu reģistrs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Klases zaudēto mantu reģistrs</h1>
+    <form id="item-form">
+        <input type="text" id="item-name" placeholder="Mantas nosaukums" required>
+        <input type="text" id="item-desc" placeholder="Apraksts" required>
+        <input type="text" id="item-owner" placeholder="Tavs vārds" required>
+        <select id="item-type">
+            <option value="pazaudēta">Pazaudēta</option>
+            <option value="atrasta">Atrasta</option>
+        </select>
+        <button type="submit">Pievienot</button>
+    </form>
+    <h2>Mantu saraksts</h2>
+    <ul id="item-list"></ul>
+    <script src="script.js"></script>
+</body>
+</html>
